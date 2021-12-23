@@ -1,21 +1,22 @@
-<ul class="app-employees">
+<h2>Employees</h2>
+<ul ngClass="employee-list">
   <li *ngFor="let employee of employees">
-    User ID: {{employee.userId}}
+    <span ngClass="key">User ID:</span>&nbsp;<span ngClass="value">{{employee.userId}}</span>
     <br/>
-    Job Title Name: {{employee.jobTitleName}}
+    <span ngClass="key">Job Title Name:</span>&nbsp;<span ngClass="value">{{employee.jobTitleName}}</span>
     <br/>
-    First Name: {{employee.jobTitleName}}
+    <span ngClass="key">First Name:</span>&nbsp;<span ngClass="value">{{employee.jobTitleName}}</span>
     <br/>
-    Last Name: {{employee.jobTitleName}}
+    <span ngClass="key">Last Name:</span>&nbsp;<span ngClass="value">{{employee.jobTitleName}}</span>
     <br/>
-    Preferred Full Name: {{employee.preferredFullName}}
+    <span ngClass="key">Preferred Full Name:</span>&nbsp;<span ngClass="value">{{employee.preferredFullName}}</span>
     <br/>
-    Employee Code: {{employee.employeeCode}}
+    <span ngClass="key">Employee Code:</span>&nbsp;<span ngClass="value">{{employee.employeeCode}}</span>
     <br/>
-    Region: {{employee.region}}
+    <span ngClass="key">Region:</span>&nbsp;<span ngClass="value">{{employee.region}}</span>
     <br/>
-    Phone Number: {{employee.phoneNumber}}
+    <span ngClass="key">Phone Number:</span>&nbsp;<span ngClass="value">{{employee.phoneNumber}}</span>
     <br/>
-    Email Address: {{employee.emailAddress}}
+    <span ngClass="key">Email Address:</span>&nbsp;<span ngClass="value">{{employee.emailAddress}}</span>
   </li>
 </ul>

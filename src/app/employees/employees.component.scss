@@ -1,7 +1,23 @@
-.app-employees li {
+:host ul {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+:host ul li {
+  list-style: none;
   margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: lightgray;
+  text-align: left;
+  padding: 25px 50px;
 
   :last-child {
     margin-bottom: 0;
   }
+}
+
+.key {
+  font-weight: bold;
 }
