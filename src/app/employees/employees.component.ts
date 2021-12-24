@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-
-import input from '../../employees.json';
+import { Component, Input } from '@angular/core';
 import { Employee } from '../employee';
 
 @Component({
@@ -9,11 +7,8 @@ import { Employee } from '../employee';
   styleUrls: ['./employees.component.scss']
 })
 export class EmployeesComponent {
-  employees: Array<Employee> = input.employees;
-
+  @Input() employees: Array<Employee> = [] as Employee[];
+  
   constructor() { }
 
-  handleClick() {
-    alert('clicked');
-  }
 }
