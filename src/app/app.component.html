@@ -1,4 +1,5 @@
 <h2>Employees</h2>
+<a id="download-button" title="Download JSON" [href]="downloadJsonHref" download="employees.json"><button>Download</button></a>
 <app-employee-form *ngIf="showEmployeeForm" id="employee-form" (newEmployeeEvent)="addEmployee($event)"></app-employee-form>
 <button *ngIf="!showEmployeeForm" id="form-show-button" (click)="toggleEmployeeForm()">Create New</button>
 <button *ngIf="showEmployeeForm" id="form-cancel-button" (click)="toggleEmployeeForm()">Cancel</button>
