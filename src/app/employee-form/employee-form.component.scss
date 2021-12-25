@@ -1,20 +1,28 @@
 :host form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
-}
+  
+  input {
+    margin-bottom: 5px;
+  
+    :last-child {
+      margin-bottom: 0;
+    }
 
-:host form input {
-  margin-bottom: 5px;
-
-  :last-child {
-    margin-bottom: 0;
+    #submit {
+      width: 50%;
+      margin: 0 auto;
+      padding: 5px;
+    }
   }
-}
 
-#submit {
-  width: 50%;
-  margin: 0 auto;
-  padding: 5px;
+  @media (min-width: 769px) {
+    width: 55%;
+  }
+  
+  @media (min-width: 1025px) {
+    width: 35%;
+  }
 }
