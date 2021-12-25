@@ -1,0 +1,23 @@
+<ul ngClass="employee-list">
+  <li *ngFor="let employee of employees; let i = index;">
+    <button ngClass="delete-button" (click)="remove(i)">X</button>
+    <br/>
+    <span ngClass="key">User ID:</span>&nbsp;<span ngClass="value">{{employee.userId}}</span>
+    <br/>
+    <span ngClass="key">Job Title Name:</span>&nbsp;<span ngClass="value">{{employee.jobTitleName}}</span>
+    <br/>
+    <span ngClass="key">First Name:</span>&nbsp;<span ngClass="value">{{employee.jobTitleName}}</span>
+    <br/>
+    <span ngClass="key">Last Name:</span>&nbsp;<span ngClass="value">{{employee.jobTitleName}}</span>
+    <br/>
+    <span ngClass="key">Preferred Full Name:</span>&nbsp;<span ngClass="value">{{employee.preferredFullName}}</span>
+    <br/>
+    <span ngClass="key">Employee Code:</span>&nbsp;<span ngClass="value">{{employee.employeeCode}}</span>
+    <br/>
+    <span ngClass="key">Region:</span>&nbsp;<span ngClass="value">{{employee.region}}</span>
+    <br/>
+    <span ngClass="key">Phone Number:</span>&nbsp;<span ngClass="value">{{employee.phoneNumber}}</span>
+    <br/>
+    <span ngClass="key">Email Address:</span>&nbsp;<span ngClass="value">{{employee.emailAddress}}</span>
+  </li>
+</ul>

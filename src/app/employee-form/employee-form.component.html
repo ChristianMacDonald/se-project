@@ -1,0 +1,12 @@
+<form [formGroup]="employeeForm">
+  <input id="user-id" placeholder="User ID" formControlName="userId"/>
+  <input id="job-title-name" placeholder="Job Title Name" formControlName="jobTitleName"/>
+  <input id="first-name" placeholder="First Name" formControlName="firstName"/>
+  <input id="last-name" placeholder="Last Name" formControlName="lastName"/>
+  <input id="preferred-full-name" placeholder="Preferred Full Name" formControlName="preferredFullName"/>
+  <input id="employee-code" placeholder="Employee Code" formControlName="employeeCode"/>
+  <input id="region" placeholder="Region" formControlName="region"/>
+  <input id="phone-number" placeholder="Phone Number" formControlName="phoneNumber"/>
+  <input id="email-address" placeholder="Email Address" formControlName="emailAddress"/>
+  <input id="submit" type="submit" (click)="addNewEmployee()"/>
+</form>
