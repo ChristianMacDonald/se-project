@@ -24,4 +24,16 @@ describe('EmployeeFormComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should create event emitter', () => {
+    expect(component.addNewEmployee).toBeDefined();
+  });
+
+  it('should have a value for employeeForm after detectChanges()', () => {
+    expect(component.employeeForm).toBeDefined();
+  });
+
+  it('should have function addNewEmployee', () => {
+    expect(component.addNewEmployee).toBeDefined();
+  });
 });
