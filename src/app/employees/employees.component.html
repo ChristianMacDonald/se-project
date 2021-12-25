@@ -1,5 +1,7 @@
 <ul ngClass="employee-list">
-  <li *ngFor="let employee of employees">
+  <li *ngFor="let employee of employees; let i = index;">
+    <button ngClass="delete-button" (click)="remove(i)">X</button>
+    <br/>
     <span ngClass="key">User ID:</span>&nbsp;<span ngClass="value">{{employee.userId}}</span>
     <br/>
     <span ngClass="key">Job Title Name:</span>&nbsp;<span ngClass="value">{{employee.jobTitleName}}</span>

@@ -11,4 +11,7 @@ export class EmployeesComponent {
   
   constructor() { }
 
+  remove(i: number): void {
+    this.employees.splice(i, 1);
+  }
 }
