@@ -19,7 +19,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-      console.log(this.employeeList);
       this.generateDownloadJsonUri();
   }
 
@@ -31,7 +30,6 @@ export class AppComponent implements OnInit {
     console.log(e);
     try {
       let employee: Employee = JSON.parse(e);
-      console.log(employee);
       this.employeeList.push(employee);
     } catch {
       console.log('Failed to parse JSON string');
