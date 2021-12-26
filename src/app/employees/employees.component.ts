@@ -12,6 +12,8 @@ export class EmployeesComponent {
   constructor() { }
 
   remove(i: number): void {
-    this.employees.splice(i, 1);
+    if (confirm(`Are you sure you want to delete employee '${this.employees[i].userId}'`)) {
+      this.employees.splice(i, 1);
+    }
   }
 }
